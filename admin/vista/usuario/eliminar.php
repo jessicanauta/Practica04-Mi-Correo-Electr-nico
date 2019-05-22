@@ -11,7 +11,7 @@
         <meta charset="UTF-8"> 
         <title>Eliminar datos de persona</title> 
     </head> 
-    <body> 
+    <body>  
         <?php 
             $codigo = $_GET["codigo"]; 
             $sql = "SELECT * FROM usuario where usu_codigo=$codigo"; 

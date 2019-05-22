@@ -42,7 +42,7 @@
         "WHERE usu_codigo = $codigo"; 
         
         if ($conn->query($sql) === TRUE) { 
-            echo "Se ha actualizado los datos personales correctamemte!!!<br>"; 
+            echo "Se ha actualizado los datos correctamemte!!!<br>"; 
         } else { 
             echo "Error: " . $sql . "<br>" . mysqli_error($conn) . "<br>"; 
         }
