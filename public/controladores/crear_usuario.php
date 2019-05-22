@@ -31,8 +31,10 @@
                 $rol=$admin;
             }
 
+            $archivo=$_FILES["archivo"]["name"]; 
+
             $sql = "INSERT INTO usuario VALUES (0, '$cedula', '$nombres', '$apellidos', '$direccion', '$telefono',
-            '$correo', '$rol', MD5('$contrasena'), '$fechaNacimiento', 'N', null, null)";
+            '$correo', '$rol', MD5('$contrasena'), '$fechaNacimiento', 'N', null, null, $archivo)";
             
             if ($conn->query($sql) === TRUE) {
             echo "<p>Se ha creado los datos personales correctamemte!!!</p>";
