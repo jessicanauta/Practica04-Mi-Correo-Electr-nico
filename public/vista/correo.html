@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enviar Correo</title>
+        <meta charset="utf-8"/>
+        <link href="../../css/Formulario.css" rel="stylesheet" />
+    </head>
+    <body>
+           
+        <form id="for01" method="POST" action="../controladores/correo.php">
+
+        <legend><Strong>ENVIAR CORREO</Strong> </legend> <br> 
+        <label for="fecha">Fecha (*)</label>
+        <input type="date" id="fecha" name="fecha" value=""/>
+        <br>
+
+        <label for="remitente">Remitente (*)</label>
+        <input type="text" id="remitente" name="remitente" value=""/>
+        <br>
+
+        <label for="destinatario">Destinatario (*)</label>
+        <input type="text" id="destinatario" name="destinatario" value=""/>
+        <br>
+
+        <label for="asunto">Asunto (*)</label>
+        <input type="text" id="asunto" name="asunto" value=""/>
+        <br>
+
+        <label for="mensaje">Mensaje (*)</label>
+        <textarea id="mensaje" name="mensaje" value=""></textarea>
+        <br>
+
+        <input class="btn" type="submit" id="enviar" name="enviar" value="Enviar" />
+        <input class="btn" type="reset" id="cancelar" name="cancelar" value="Cancelar" />
+
+        </form> 
+    </body>
+</html>

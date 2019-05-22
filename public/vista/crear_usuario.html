@@ -11,7 +11,9 @@
            
         <form id="formulario01" method="POST" action="../controladores/crear_usuario.php" onsubmit="return validarCamposObligatorios()">
 
-            <label for="cedula">Cedula (*)</label>
+        <legend><Strong> CREAR USUARIO</Strong> </legend> <br> 
+
+        <label for="cedula">Cedula (*)</label>
         <input type="text" id="cedula" name="cedula" value="" placeholder="Ingrese el número de cedula ..."
             maxlength="10" onblur="validarCedula()" />
         <span id="mensajeCedula"></span>
